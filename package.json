@@ -4,12 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host true --port 5173",
-    "build": "vite build",
+    "dev": "vite --mode development",
+    "build": "tsc -p tsconfig.app.json --noEmit || true; vite build --mode production",
+    "build:strict": "tsc -p tsconfig.app.json --noEmit && vite build --mode production",
     "start": "node server/static-server.mjs 5173",
-    "preview": "vite preview --host true --port 5173",
+    "preview": "vite preview --mode production",
     "relay": "node server/room-relay.mjs",
-    "play": "vite build && node server/static-server.mjs 5173"
+    "play": "npm run build && npm start"
   },
   "dependencies": {
     "react": "^18.3.1",

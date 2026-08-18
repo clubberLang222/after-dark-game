@@ -1,29 +1,45 @@
 # After Dark
 
-Premium party board game — React + Vite + TypeScript.
+Premium party board game — **React + Vite + TypeScript**.
 
-## Quick start
+**Repository:** https://github.com/clubberLang222/after-dark-game
+
+## Quick start (development)
 
 ```bash
+git clone https://github.com/clubberLang222/after-dark-game.git
+cd after-dark-game
 npm install
 npm run dev
 ```
 
-Open http://localhost:5173/
+Open the URL Vite prints (usually http://localhost:5173/).
+
+## Production build
 
 ```bash
-npm run build && npm start
+npm install
+npm run build          # outputs to dist/
+npm start              # serves dist on port 5173 (all interfaces)
 ```
 
-## Features
+Or: `npm run play`
 
-- Single authoritative GameEngine
-- 20 photo avatars · 10 3D CSS pawns · 3 theme boards
-- Sparks / Heat · cards · Admin CMS (password: `afterdark`)
-- Local / Couples / Party · Local Network multiplayer
-- Smart TV casting: `?display=ROOMCODE`
-- Controllers: `?join=ROOMCODE`
+Admin password: **afterdark**
 
-## Repository
+## Smart TV casting
 
-https://github.com/clubberLang222/after-dark-game
+1. Host starts the game
+2. Local Network mode → room code
+3. TV browser: `http://<host-lan-ip>:5173/?display=ROOMCODE`
+4. Controllers: `?join=ROOMCODE`
+
+## Scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Vite dev server |
+| `npm run build` | Production → `dist/` |
+| `npm start` | Serve production |
+| `npm run play` | build + start |
+| `npm run relay` | WebSocket relay |
