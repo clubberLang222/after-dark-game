@@ -1,0 +1,29 @@
+{
+  "name": "after-dark",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host true --port 5173",
+    "build": "vite build",
+    "start": "node server/static-server.mjs 5173",
+    "preview": "vite preview --host true --port 5173",
+    "relay": "node server/room-relay.mjs",
+    "play": "vite build && node server/static-server.mjs 5173"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ws": "^8.18.0",
+    "three": "^0.170.0",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.117.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
