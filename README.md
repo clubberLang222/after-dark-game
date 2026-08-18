@@ -1,8 +1,6 @@
 # After Dark
 
-**https://github.com/clubberLang222/after-dark-game**
-
-## Run
+https://github.com/clubberLang222/after-dark-game
 
 ```bash
 git clone https://github.com/clubberLang222/after-dark-game.git
@@ -11,14 +9,12 @@ npm install
 npm run dev
 ```
 
-## Production
+Production:
 
 ```bash
-npm run build
-npm start
-# http://127.0.0.1:5173/
+npm run build && npm start
 ```
 
 Admin password: `afterdark`
 
-TV cast: `?display=ROOMCODE` · Controllers: `?join=ROOMCODE`
+TV: `?display=CODE` · Controllers: `?join=CODE`
