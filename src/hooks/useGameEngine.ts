@@ -27,12 +27,8 @@ export function useGameEngine() {
     return players[idx] ?? null;
   }, [state.config?.players, state.turnIndex]);
 
-  const configure = useCallback((config: Partial<GameConfig>) => {
-    engine.configure(config);
-  }, []);
-  const setPlayers = useCallback((players: Player[]) => {
-    engine.setPlayers(players);
-  }, []);
+  const configure = useCallback((config: Partial<GameConfig>) => engine.configure(config), []);
+  const setPlayers = useCallback((players: Player[]) => engine.setPlayers(players), []);
   const startGame = useCallback(() => engine.startGame(), []);
   const requestRoll = useCallback((kind: DiceKind = 'MOVE') => engine.requestRoll(kind), []);
   const completePrivacyGate = useCallback(() => engine.completePrivacyGate(), []);

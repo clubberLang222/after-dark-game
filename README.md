@@ -9,12 +9,10 @@ npm install
 npm run dev
 ```
 
-Production:
+Production: `npm run build && npm start`
 
-```bash
-npm run build && npm start
-```
-
-Admin password: `afterdark`
+Admin: `afterdark`
 
 TV: `?display=CODE` · Controllers: `?join=CODE`
+
+> Full game tree (engine, board, cards, admin, CSS) may need a local force-push from `AfterDark-Finished-Game.zip` if clone is missing modules.
