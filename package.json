@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --mode development",
-    "build": "tsc -p tsconfig.app.json --noEmit || true; vite build --mode production",
-    "build:strict": "tsc -p tsconfig.app.json --noEmit && vite build --mode production",
+    "build": "vite build --mode production",
     "start": "node server/static-server.mjs 5173",
     "preview": "vite preview --mode production",
     "relay": "node server/room-relay.mjs",

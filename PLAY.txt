@@ -1,0 +1,7 @@
+AFTER DARK — Finished Game
+1. git clone https://github.com/clubberLang222/after-dark-game.git
+2. cd after-dark-game
+3. npm install
+4. npm run build && npm start
+5. Open http://127.0.0.1:5173/
+Admin password: afterdark
