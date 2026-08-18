@@ -19,6 +19,5 @@ http.createServer((req, res) => {
   res.end(fs.readFileSync(filePath));
 }).listen(port, host, () => {
   console.log('After Dark (production)');
-  console.log('  → http://127.0.0.1:' + port + '/');
-  console.log('  → http://<lan-ip>:' + port + '/');
+  console.log('  http://127.0.0.1:' + port + '/');
 });
