@@ -4,48 +4,38 @@ Premium party board game — React + Vite + TypeScript.
 
 **Repository:** https://github.com/clubberLang222/after-dark-game
 
-## Download
+## Downloads
 
-| Package | Link |
-|---------|------|
-| **Source ZIP (main branch)** | [Download ZIP](https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip) |
-| **Clone** | `git clone https://github.com/clubberLang222/after-dark-game.git` |
+| Package | Download |
+|---------|----------|
+| **Game source (PC / Mac)** | [Download source ZIP](https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip) |
+| **Android install (PWA)** | [Download Android ZIP](https://github.com/clubberLang222/after-dark-android/archive/refs/heads/main.zip) |
 
-Direct URL:
+### Direct links
 
-```
-https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip
-```
+- Source: `https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip`
+- Android: `https://github.com/clubberLang222/after-dark-android/archive/refs/heads/main.zip`
+- Android repo: https://github.com/clubberLang222/after-dark-android
 
-## Quick start
+## Quick start (PC)
 
 ```bash
-# After downloading / unzipping or cloning:
+git clone https://github.com/clubberLang222/after-dark-game.git
 cd after-dark-game
 npm install
 npm run dev
 ```
 
-Open http://localhost:5173/
+Production: `npm run build && npm start`
 
-### Production
+## Android
 
-```bash
-npm run build
-npm start
-# → http://127.0.0.1:5173/
-```
+1. Download the [Android ZIP](https://github.com/clubberLang222/after-dark-android/archive/refs/heads/main.zip)
+2. Unzip → run `node host-for-android.mjs`
+3. On phone Chrome (same Wi‑Fi): open the printed URL → **Install app**
 
 ## Features
 
 - Single GameEngine · Sparks / Heat · cards
-- 20 avatars · 10 pawns · theme boards
 - Admin CMS (password: `afterdark`)
-- Local Network multiplayer
-- Smart TV cast: `?display=ROOMCODE`
-- Controllers: `?join=ROOMCODE`
-
-## Links
-
-- Code: https://github.com/clubberLang222/after-dark-game
-- ZIP download: https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip
+- Smart TV: `?display=ROOMCODE` · Controllers: `?join=ROOMCODE`
