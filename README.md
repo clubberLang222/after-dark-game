@@ -2,17 +2,16 @@
 
 Premium party board game — React + Vite + TypeScript.
 
-## Downloads
-
-| Package | Link |
-|---------|------|
-| **Game source** | [ZIP](https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip) |
-| **Android PWA** | [ZIP](https://github.com/clubberLang222/after-dark-android/archive/refs/heads/main.zip) |
-
 ```bash
 npm install && npm run dev
+# or production:
+npm run build && npm start
 ```
 
-Admin: `afterdark` · Frisky levels · Media vault (Admin) · Board particles
+Admin: `afterdark`
 
-TV: `?display=CODE` · Controllers: `?join=CODE`
+## Features
+48-space boards · 3D textures · preference / items / acts menus · Exhibitionist deck · media vault · LAN / TV cast
+
+## Download
+[ZIP](https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip)
