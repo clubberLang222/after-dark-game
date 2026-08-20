@@ -1,10 +1,14 @@
-AFTER DARK — Master install (Windows)
+AFTER DARK — Install
+====================
+Need: Node.js LTS → https://nodejs.org
 
-1. Install Node.js LTS: https://nodejs.org
-2. Double-click: installer\Start After Dark.vbs
+git clone https://github.com/clubberLang222/after-dark-game.git
+cd after-dark-game
+npm install
+npm run build
+npm start
 
-Android phones (same Wi-Fi):
-  installer\Start After Dark Android Host.vbs
-  Chrome on phone → Install app
+Or download:
+https://github.com/clubberLang222/after-dark-game/archive/refs/heads/main.zip
 
-Admin: afterdark
+Admin password: afterdark
