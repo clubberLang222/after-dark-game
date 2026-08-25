@@ -1,0 +1,22 @@
+{
+  "release": "After Dark Final Engine/UI Upgrade",
+  "date": "2026-08-25",
+  "archive": "After-Dark-Final-Engine-Upgrade-2026-08-25.zip",
+  "sha256": "62f46061cc699cf23d191754c070b2defb31a1e938d49e6d77c1c0d5b56ede5b",
+  "verification": {
+    "regression_suites": "8/8 PASS",
+    "source_files_scanned": 68,
+    "missing_relative_imports": 0,
+    "delimiter_issues": 0,
+    "js_mjs_cjs_syntax": "PASS",
+    "production_build": "not run; npm dependency installation timed out in sandbox"
+  },
+  "features": [
+    "dedicated host right rail",
+    "non-blocking cinematic challenge card",
+    "adaptive R3F graphics quality",
+    "ACES Filmic color pipeline",
+    "difficulty-based challenge timers up to 300 seconds",
+    "full-board presentation"
+  ]
+}
